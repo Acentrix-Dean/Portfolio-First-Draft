@@ -1,0 +1,160 @@
+/* Grey background*/
+.opacity-75 {
+    opacity: 0.75;
+}
+
+/*Animations*/
+@keyframes move-down {
+    from {top: -100vw;}
+    to {top: 0vw;} 
+}
+
+@keyframes move-right {
+    from {left: -100vw;}
+    to {left: 0vw;}
+}
+
+@keyframes move-left {
+    from {right: -100vw;}
+    to {right: 0vw;}
+}
+
+.nav-animation-right {
+    position: relative;
+    animation: move-right 3s;
+}
+
+.bg-animation {
+    position: relative;
+    animation: move-down 6s;
+}
+
+.nav-animation-left {
+    position: relative;
+    animation: move-left 2s;
+}
+
+.grey-padding {
+    padding-top: 15em;
+    padding-bottom: 12em;
+    animation: move-down 6s;
+}
+
+/*Video Background*/
+.background {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -5;
+}
+
+/*Section Sizing*/
+.square-size {
+    height: 30rem;
+}
+
+.square-size-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img {
+    border-radius: 1.5em;
+}
+
+/*Text Styling*/
+.square-size p {
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 1.1rem;
+}
+
+.git-text {
+    position: relative;
+    top: 30%;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+}
+
+button, label {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.git-head {
+    position: relative;
+    top: 20%;
+    font-size: 2rem;
+}
+
+/*Hover Animations*/
+h2:hover, h1:hover {
+    -webkit-transform: scale(1.3);
+    -webkit-transition: transform 1s ease-in-out;
+    transform: scale(1.3);
+    transition: transform 1s ease-in-out;
+}
+
+.large:hover {
+    -webkit-transform: scale(1.05);
+    -webkit-transition: transform 2s ease-in-out;
+    transform: scale(1.05);
+    transition: transform 2s ease-in-out;
+}
+
+.git-image {
+    filter: grayscale(1);
+}
+
+.git-image:hover {
+    filter: none;
+    -webkit-transform: scale(1.05);
+    -webkit-transition: 2s ease-in-out;
+    transform: scale(1.05);
+    transition: 2s ease-in-out;
+}
+
+/*Footer Styling*/
+.footer-style {
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*Media Screen Compatibility*/
+@media screen and (max-width: 750px) {
+    .nav-animation-right {
+        position: relative;
+        animation: move-right 2s;
+    }
+
+    .grey-padding {
+        padding-top: 15em;
+        padding-bottom: 15em;
+        animation: move-down 6s;
+    }
+}
+
+.img-fill {
+    max-height: auto;
+    max-width: 80%;
+}
+
+.behind {
+    z-index: -1;
+}
